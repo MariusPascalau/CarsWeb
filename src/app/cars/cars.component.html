@@ -1,0 +1,8 @@
+<div *ngFor="let car of cars" (click)="clickACar(car)">
+  <app-car-details [car]="car"></app-car-details>
+</div>
+
+<div *ngIf="selectedCar">
+  <app-car-details [car]="selectedCar"></app-car-details>
+</div>
+
